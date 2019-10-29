@@ -269,7 +269,7 @@ width: 50%;
 }
 
 .icons li {
-    padding: 50px 100px;
+    padding: 50px 8%;
 }
 
 .icons ul {
@@ -392,23 +392,31 @@ footer button {
     padding-right: 50%;
 }
 
-
 .bobbyBellaContent {
     padding: 50px 40px 40px 10%;
     
 }
 
-
 .marcoContent {
     padding: 50px 10% 40px 40px;
+}
+
+.about button {
+    width: 31%;
+}
+
+.blog button {
+    width: 46%;
+    padding: 10px 20px;
 }
 
 input {
     width: 50%;
     
 }
-button {
+form button {
     width: 25%;
+    padding: 10px 15px;
 }
 }
 
@@ -416,6 +424,15 @@ button {
 
 .logo {
     padding-right: 45%;
+}
+
+.about button {
+    width: 42%;
+}
+
+.blog button {
+    width: 58%;
+    padding: 10px 20px;
 }
 }
 
@@ -425,10 +442,6 @@ nav li {
     padding: 0 10px;
 
 }
-
-/* .logo {
-    padding-right: 55%;
-} */
 
 h1 {
     font-size: 5rem;
@@ -559,7 +572,11 @@ h2 {
     left:50%;
     transform: translate(-50%, -50%);
     margin-top: 60px;
-    padding: 15px 30px;
+    padding: 10px 5px;
+}
+
+.moreAboutContent button {
+    padding: 18px 14px;
 }
 
 .about {
@@ -568,6 +585,11 @@ h2 {
 
 .blog {
     padding: 40px 0px;
+}
+
+.blog button,
+.about button {
+    width: 30%;
 }
 
 .bobbyBellaImage,
@@ -602,7 +624,6 @@ h2 {
     position:absolute;
     top: 50%;
     z-index: 2;
-    margin-top: 10px;
 }
 
 .bobbyBellaImage {
@@ -610,10 +631,6 @@ h2 {
     position:absolute;
     top: 0px;
     height: 50%;
-}
-
-.icons li {
-    padding: 50px 70px;
 }
 
 .contactInfo {
@@ -624,7 +641,15 @@ h2 {
 }
 
 @media (max-width: 620px) {
-    .myForm {
+.about button {
+    width: 37%;
+}
+
+.blog button {
+    width: 34%;
+}
+
+.myForm {
     width: 100%;
 }
 
@@ -632,6 +657,7 @@ input {
     width: 100%;
     margin: 20px 0px;
 }
+
 
 footer button {
     width:40%;
@@ -651,8 +677,6 @@ footer button {
 p {
     font-size: 2rem;
     }
-
-
 
 h1 {
     font-size: 4rem;
@@ -694,14 +718,23 @@ h2 {
 }
 
 .about button {
-    padding: 25px 30px;
+    padding: 20px 25px;
     margin-top: 80px;
+    width: 45%;
+}
+
+.bobbyBella {
+    height: 960px;
 }
 
 .bobbyBellaContent h2,
 .marcoContent h2 {
     font-size: 3rem;
     margin-bottom: 50px;
+}
+
+.blog button {
+    width: 39%;
 }
 
 .blog {
@@ -771,13 +804,24 @@ header {
 height: 70vh;
 }
 
-.bobbyBella {
-    height: 900px;
+.about button {
+    width: 50%;
+    padding: 20px 23px;
+}
+
+.blog button {
+    width: 45%;
+}
+
+.blog h2  {
+    margin-bottom: 25px;
 }
 }
 
 @media (max-width: 375px) {
-
+.about button {
+    width: 55%;
+}   
 .bobbyBella {
     height: 950px;
 }
