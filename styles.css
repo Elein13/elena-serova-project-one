@@ -1,0 +1,788 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+/* General styles */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Barlow', sans-serif;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    background-color: #D6F1E4;
+    font-weight: 400;
+
+}
+
+header,
+p,
+h1,
+ul,
+li {
+    padding:0;
+    margin:0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a,
+button {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #D6F1E4;
+}
+
+.wrapper {
+    max-width: 1080px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    max-width:100%;
+}
+
+button {
+    background-color: #116500;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Offside', cursive;
+    margin-top: 18px;
+}
+
+/* Header styles */
+
+header {
+    height: 95vh;
+    background-image: url(./assets/header-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.fa-bars {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 5rem;
+    color: #FFF;
+    display: none;
+}
+
+.logo {
+    font-family: 'Offside', cursive;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #FFF;
+    width: 10%;
+    padding: 30px 60% 0px 0px;
+}
+
+
+
+nav li,
+.icons li {
+    display:inline-block;
+    padding: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    line-height: 2.9rem;
+
+}
+
+.headerContainer {
+    padding-top: 50px;
+}
+
+.headingContainer,
+.socialContainer {
+    width: 50%;
+    float: left;
+}
+
+
+h1 {
+    font-size: 6.88rem;
+    color: #FFF;
+    line-height: 6.37rem;
+    letter-spacing: 0.8px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+.social {
+    position:fixed;
+    right: 50px;
+}
+
+.social i {
+    color: #FFF;
+    padding: 5px 0;
+}
+
+
+.social i:hover,
+.socail i:active {
+    color: #D6F1E4;
+}
+
+/* Main styles */
+
+/* About section styles */
+
+h2 {
+    font-size: 4.2rem;
+    font-family: 'Offside', cursive;
+
+}
+
+.about {
+    padding-bottom: 80px;
+}
+
+.centered {
+    text-align: center;
+    padding: 40px 0;
+    color: #116500;
+}
+
+.panda1,
+.panda2,
+.panda3 {
+    float: left;
+    width: calc((100% - 60px) / 3);
+    margin-bottom: 80px;
+}
+
+.about li:nth-of-type(2) {
+    margin: 0px 30px;
+}
+
+.about img {
+    display: block;
+}
+
+.moreAboutImage,
+.moreAboutContent {
+    float: left;
+}
+
+.moreAboutImage {
+    width: calc(31% - 40px);
+    margin-right: 40px;
+}
+
+.moreAboutContent {
+    width: 69%;
+}
+
+.moreAboutContent h2 {
+    color: #116500;
+    margin: 0px 0px 20px 0px;
+}
+
+/* Blog section syles */
+
+.blog {
+    background-color: #213C28;
+}
+
+
+.bobbyBellaContent {
+padding: 80px 50px 80px calc((100% - 1080px) / 2);
+width: 50%;
+}
+
+.bobbyBellaImage,
+.marcoImage {
+    width: 50%;
+    height: 500px;
+}
+
+.bobbyBellaImage {
+    background-image: url(./assets/right-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.marcoImage {
+    background-image: url(./assets/left-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.marcoContent {
+    padding: 80px calc((100% - 1080px) / 2) 80px 50px;
+    width: 50%;
+}
+
+.bobbyBellaContent,
+.bobbyBellaImage,
+.marcoImage,
+.marcoContent {
+    float:left;
+}
+
+.blog h2,
+.blog p {
+    color: #FFFFFF;
+}
+.blog button {
+    background-color: #FFFFFF;
+    color: #213C28;
+}
+
+/* Icons section styles */
+
+.icons a,
+.icons i {
+    color: #213C28;
+    text-align: center;
+}
+
+.icons a:hover,
+.icons a:focus {
+    color: #ff8000;
+}
+
+.icons li {
+    padding: 50px 100px;
+}
+
+.icons ul {
+    text-align: center;
+}
+
+.icons p {
+    font-family: 'Offside', cursive;
+}
+
+/* Footer styles */
+
+footer {
+    background-color: #213C28;
+    color: #FFF;
+}
+
+.contact {
+    padding: 100px 0;
+}
+
+.subscription,
+.contactInfo,
+.footerMenu {
+    float: left;
+}
+
+.subscription {
+    width: 61%;
+}
+
+.contactInfo {
+    width: 24%;
+}
+
+footer p {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-family: 'Offside', cursive;
+    font-weight: 400;
+    margin:0px 0px 20px 0px;
+
+}
+
+.myForm {
+    width: 550px;
+    
+}
+
+input {
+    width: 70%;
+    height: 46px;
+    padding: 0px;
+    border: 0px;
+    text-indent: 32%;
+
+}
+
+input[type="email"]::placeholder {
+    color: #2C2D2C;
+    font-family: 'Barlow', sans-serif;
+    
+}
+
+footer button {
+    background: #2C2D2C;
+    color: white;
+    width: 29%;
+    margin-top: 12px;
+    
+}
+
+.footerMenu {
+    width: 14%;
+    text-align: right;
+    font-family: 'Offside', cursive; 
+    font-size: 2rem;
+    line-height: 20px;
+}
+
+.footerMenu li {
+    display:inline-block;
+    padding: 3px 0px 5px 20px;
+}
+
+.copyright {
+    text-align: center;
+    background-color: #2C2D2C;
+    padding: 10px 0;
+}
+
+/* Media queries */
+
+@media (max-width: 1340px) {
+.bobbyBellaContent {
+    padding: 80px 40px 80px 10%;
+    
+    
+}
+
+.marcoContent {
+    padding: 80px 10% 80px 40px;
+}
+
+.bobbyBellaContent h2,
+.marcoContent h2 {
+    line-height: 40px;
+    margin: 20px 0px;
+}
+
+}
+
+
+@media (max-width: 1230px) {
+
+.logo {
+    padding-right: 50%;
+}
+
+
+.bobbyBellaContent {
+    padding: 50px 40px 40px 10%;
+    
+}
+
+
+.marcoContent {
+    padding: 50px 10% 40px 40px;
+}
+
+input {
+    width: 50%;
+    
+}
+button {
+    width: 25%;
+}
+}
+
+@media (max-width: 990px) {
+
+.logo {
+    padding-right: 45%;
+}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+nav li {
+    padding: 0 10px;
+
+}
+
+/* .logo {
+    padding-right: 55%;
+} */
+
+h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.headerContainer {
+    padding-top: 70px;
+}
+
+header {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.bobbyBellaContent {
+padding: 40px 30px 35px 10%;
+}
+
+.marcoContent {
+    padding: 40px 10% 35px 30px;
+}
+
+
+p {
+    font-size: 1.8rem;
+}
+
+.contact {
+    padding: 50px 0px;
+    
+}
+
+.subscription,
+.contactInfo,
+.footerMenu {
+    width: 100%;
+    float: none;
+    padding-bottom: 30px;
+    text-align: center;
+    
+}
+
+.contactInfo {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.footerMenu {
+    padding-bottom: 0px;
+}
+
+.myForm {
+    margin:0 auto;
+}
+
+footer p{
+    font-size: 2rem;
+}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+.logo {
+    padding-right: 45%;
+}
+
+header nav li:not(.logo),
+.social {
+    display:none;
+    }
+
+.fa-bars {
+    display: initial;
+    }
+
+h1 {
+    font-size: 5.5rem;   
+}
+
+h1,
+.social i {
+text-shadow: 1px 2px #213C28;
+}
+
+
+.headerContainer {
+    padding-top: 80px;
+}
+
+.headingContainer {
+    width: 70%;
+}
+
+.socialContainer {
+    width: 30%;
+}
+
+.social {
+    right: 30px;
+}
+
+.social i {
+    padding: 7px 0;
+}
+
+h2 {
+    line-height: 35px;
+}
+
+.moreAboutImage {
+    display: none;
+}
+
+.moreAboutContent {
+    width: 100%;
+    float: none;
+}
+
+.moreAboutContent button,
+.blog button {
+    position:relative;
+    top:50%; 
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin-top: 60px;
+    padding: 15px 30px;
+}
+
+.about {
+    padding-bottom: 30px;
+}
+
+.blog {
+    padding: 40px 0px;
+}
+
+.bobbyBellaImage,
+.marcoImage,
+.bobbyBellaContent,
+.marcoContent {
+    width: 100%;
+    float: none;
+}
+
+
+.bobbyBellaContent,
+.marcoContent {
+    padding: 40px 10%;
+}
+
+.blog h2 {
+    text-align: center;
+}
+
+.blog {
+    padding-top: 0px;
+
+}
+
+.bobbyBella {
+    position:relative;
+    height: 830px;
+}
+
+.bobbyBellaContent {
+    position:absolute;
+    top: 50%;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.bobbyBellaImage {
+    z-index: 1;
+    position:absolute;
+    top: 0px;
+    height: 50%;
+}
+
+.icons li {
+    padding: 50px 70px;
+}
+
+.contactInfo {
+    width: 55%;
+    margin: 0 auto;
+}
+
+}
+
+@media (max-width: 620px) {
+    .myForm {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+footer button {
+    width:40%;
+    margin-top: 0px;
+}
+
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 490px) {
+
+.wrapper {
+    width: 90%;
+    }
+
+p {
+    font-size: 2rem;
+    }
+
+
+
+h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    width: 80%;
+}
+
+.headerContainer {
+    padding-top: 50px;
+}
+
+h2 {
+    font-size: 3.3rem;
+}
+
+.panda1,
+.panda2 {
+    float: left;
+    width: calc((100% - 20px) / 2);
+    margin-bottom: 60px;
+}
+
+.about li:nth-of-type(2) {
+    margin: 0px;
+}
+
+.panda1 {
+    margin-right: 20px;
+}
+
+.panda3 {
+    width: 100%;
+    float: none;
+    margin-bottom: 50px;
+}
+
+.panda3 img {
+    width: 100%;
+}
+
+.about button {
+    padding: 25px 30px;
+    margin-top: 80px;
+}
+
+.bobbyBellaContent h2,
+.marcoContent h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.blog {
+    padding-bottom: 10px;
+}
+
+.icons {
+    width: 40%;
+    margin: 20px auto;
+    font-size: 5rem;
+}
+
+.icons li {
+    padding: 20px 20px;
+}
+
+.icons p {
+    font-size: 2.8rem;
+    padding-top: 10px;
+}
+
+
+.contactInfo {
+    float: left;
+    width: 70%;
+}
+
+.footerMenu {
+    float: left;
+    width: 30%;
+}
+
+.contactInfo {
+    text-align: left;
+}
+
+.contactInfo p {
+    width: 70%;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+.footerMenu nav {
+    width: 70%;
+}
+
+.footerMenu {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+
+.footerMenu li {
+    float: right;
+}
+
+.copyright {
+    font-size: 1.6rem;
+}
+
+}
+
+@media (max-width: 414px) {
+header {
+height: 70vh;
+}
+
+.bobbyBella {
+    height: 900px;
+}
+}
+
+@media (max-width: 375px) {
+
+.bobbyBella {
+    height: 950px;
+}
+
+footer button {
+    width: 50%;
+}
+}
