@@ -83,7 +83,7 @@ header {
 .fa-bars {
     position: absolute;
     top: 25px;
-    right: 25px;
+    right: 10%;
     font-size: 5rem;
     color: #FFF;
     display: none;
@@ -501,8 +501,39 @@ header nav li:not(.logo),
     display: initial;
     }
 
+.bar-menu-links {
+    display: none;
+}
+
+.fa-bars:hover .bar-menu {
+    display:block;
+    background-color: #2C2D2C;
+    padding-top: 6vh;
+    position: absolute;
+    right: 5%;
+    width: 80vw;
+    height: 50vh;
+    text-align: center;
+}
+
+
+.bar-menu-link a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Barlow', sans-serif;
+    font-size: 3rem;
+    line-height: 2rem;
+    
+}
+
+.bar-menu-link a:hover,
+.bar-menu-link a:focus {
+    color: #D6F1E4;
+}
+
+
 h1 {
-    font-size: 5.5rem;   
+    font-size: 5rem;   
 }
 
 h1,
@@ -644,14 +675,22 @@ footer button {
     width: 90%;
     }
 
+.fa-bars {
+    right: 5%;
+}
+
+.fa-bars:hover .bar-menu {
+    width: 90vw;
+
+}
+
 p {
     font-size: 2rem;
     }
 
 h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-    width: 80%;
+    line-height: 4.5rem;
+    width: 90%;
 }
 
 .headerContainer {
