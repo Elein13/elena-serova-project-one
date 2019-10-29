@@ -24,16 +24,19 @@
             </ul>
         </nav>
         <i class="fa fa-bars"></i>
+        <span class="sr-only">Main menu</span>
         <div class="headerContainer clearfix">
             <div class="headingContainer">
                 <h1>A safe and loving place for all pandas</h1>
             </div>
             <div class="socialContainer">
                 <ul class="social">
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i>
+                        <span class="sr-only">Instagram</span></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i>
+                        <span class="sr-only">Facebook</span></a></li>
+                    <li><a href="#"><i class="fab fa-snapchat-ghost"></i><span class="sr-only">Snapchat</span></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
                 </ul>
             </div>
         </div>
@@ -120,6 +123,7 @@
                     <h3>Stay updated</h3>
                     <p>Subscribe to our newsletter to stay updated</p>
                     <form action="#" method="#" class="myForm" name="myForm">
+                        <label for="emailAddress" class="visuallyHidden">Email address</label>
                         <input type="email" id="userEmail" name="emailAddress" placeholder="email address"><button
                             type="button">Subscribe</button>
                     </form>

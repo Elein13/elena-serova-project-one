@@ -98,8 +98,6 @@ header {
     padding: 30px 60% 0px 0px;
 }
 
-
-
 nav li,
 .icons li {
     display:inline-block;
@@ -121,7 +119,6 @@ nav a {
     width: 50%;
     float: left;
 }
-
 
 h1 {
     font-size: 6.88rem;
@@ -145,7 +142,7 @@ h1 {
 
 .social i:hover,
 .socail i:active {
-    color: #D6F1E4;
+    color: #ff8000;
 }
 
 /* Main styles */
